@@ -1,3 +1,92 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 540px;
+	@apply lg:max-w-[1140px] md:max-w-[960px] sm:max-w-[720px];
+}
+
+.wrapper {
+	@apply pt-[50px] pb-[60px];
+}
+
+.menu-bar {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	right: 0;
+	transform-origin: top;
+	z-index: 5;
+	transition: 0.5s;
+}
+
+.icon {
+	@apply w-[40px] h-[40px] rounded-md bg-white-300 dark:bg-gray-600 flex justify-center items-center;
+}
+
+.infoDiv {
+	@apply py-[10px] flex gap-[10px] items-center;
+
+	h5 {
+		display: flex;
+		font-size: 12px;
+		line-height: 18px;
+		text-transform: capitalize;
+		font-weight: 400;
+		margin-bottom: 3px;
+		@apply dark:text-gray-400;
+	}
+	p {
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 400;
+		text-transform: capitalize;
+		@apply text-black dark:text-white-100  md:text-[14px];
+	}
+
+	> span {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 8px;
+		text-align: center;
+		line-height: 44px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+		transition: 0.3s;
+		@apply bg-white-100 hover:bg-cyan dark:bg-black dark:hover:bg-cyan;
+	}
+}
+
+.border {
+	border: 1px solid transparent;
+
+	@apply hover:border-cyan;
+}
+
+.part-wrapper {
+	@apply px-5 sm:px-10 md:px-14;
+}
+
+.line::after {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 70%;
+	@apply md:w-[200px];
+	@apply bg-cyan;
+	top: 50%;
+	left: 120%;
+	border-radius: 5px;
+}
+
+.paragraph {
+	@apply font-poppin text-gray-300 dark:text-gray-400 leading-7;
+}
