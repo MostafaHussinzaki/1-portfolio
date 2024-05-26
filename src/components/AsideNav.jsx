@@ -8,39 +8,60 @@ import { ContactSvg } from "../assets/svg/ContactSvg.jsx";
 const classes =
 	"text-[13px] dark:text-gray-400 dark:hover:text-white-100 font-poppin bg-white-300 dark:bg-gray-600 w-[60px] h-[60px] flex flex-col justify-center items-center text-center transition-all duration-300 hover:bg-cyan text-gray-300 dark:hover:bg-cyan hover:text-white-100 rounded-xl group";
 
-const svgClasses =
-	"fill-gray-300 dark:fill-gray-400 group-hover:fill-white-100 transition-all duration-300";
+const svgClasses = `fill-gray-300 dark:fill-gray-400 group-hover:fill-white-100 transition-all duration-300`;
 
 const AsideNav = () => {
 	return (
 		<aside className="hidden lg:w-[8.33%] lg:block py-4 bg-white-100 dark:bg-black h-fit rounded-xl sticky top-[30px]">
 			<ul className="flex flex-col justify-center items-center">
 				<li className="mb-4">
-					<NavLink className={classes}>
+					<NavLink
+						className={`${classes} ${({ isActive }) =>
+							isActive ? "active" : ""} `}
+						to="/"
+						// style={({ isActive }) => {
+						// 	return {
+						// 		backgroundColor: isActive && "#1b74e4",
+						// 		color: isActive && "#ffffff",
+						// 	};
+						// }}
+					>
 						<PersonSvg classes={svgClasses} size="20" />
 						About
 					</NavLink>
 				</li>
 				<li className="mb-4">
-					<NavLink className={classes}>
+					<NavLink
+						className={`${classes} ${({ isActive }) =>
+							isActive ? "active" : ""} `}
+						to="/resume"
+					>
 						<ResumeSvg classes={svgClasses} size="20" />
 						Resume
 					</NavLink>
 				</li>
 				<li className="mb-4">
-					<NavLink className={classes}>
+					<NavLink
+						className={`${classes} ${({ isActive }) =>
+							isActive ? "active" : ""} `}
+						to="/works"
+					>
 						<WorksSvg classes={svgClasses} size="20" />
 						Works
 					</NavLink>
 				</li>
-				<li className="mb-4">
+				{/* <li className="mb-4">
 					<NavLink className={classes}>
 						<BlogSvg classes={svgClasses} size="20" />
 						Blog
 					</NavLink>
-				</li>
+				</li> */}
 				<li className="">
-					<NavLink className={classes}>
+					<NavLink
+						className={`${classes} ${({ isActive }) =>
+							isActive ? "active" : ""} `}
+						to="/contact"
+					>
 						<ContactSvg classes={svgClasses} size="20" />
 						Contact
 					</NavLink>

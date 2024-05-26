@@ -53,12 +53,11 @@ const PersonalInfo = () => {
 				</a>
 			</div>
 			<div className="bg-white-300 dark:bg-gray-600 px-7 py-5 rounded-2xl mb-5">
-				<InfoDiv type="phone" title="phone" content="20+1025653880" />
 				<InfoDiv
 					type="email"
 					title="Email"
 					content="Example@Mail.Com"
-					classes="border-t-2 dark:border-[#333] break-all"
+					classes="break-all"
 				/>
 				<InfoDiv
 					type="location"

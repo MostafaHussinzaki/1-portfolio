@@ -2,6 +2,7 @@
 export default {
 	darkMode: "class",
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+	
 	theme: {
 		extend: {
 			colors: {
@@ -10,7 +11,9 @@ export default {
 					300: "#44566c",
 					400: "#a6a6a6",
 					500: "#0d0d0d",
+					550: "#0f172a",
 					600: "#1d1d1d",
+					650: "#353535",
 					700: "#1c1c1c",
 				},
 				white: {
@@ -31,6 +34,7 @@ export default {
 				dark: "url(./assets/page-bg-dark.jpg)",
 			},
 			screens: {
+				xd: "768px",
 				md: "1024px",
 				lg: "1280px",
 			},
