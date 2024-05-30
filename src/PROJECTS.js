@@ -54,7 +54,7 @@ export const PROJECTS = [
 		preview: "https://forkify-recipe1.netlify.app/",
 		repo: "https://github.com/MostafaHussinzaki/recipe-jonas-course",
 		description: [
-			"This was the last project in JavaScript course, this project develop me alot I knew a lot of things while making this project, it's code is super clean, and maintanble, you can search for recipe or add your own one.",
+			"This was the last project in JavaScript course, this project develop me alot I knew a lot of things while making this project, it's code is super clean, and maintainble, you can search for recipe or add your own one.",
 			"I created this project using vanilla JavaScript, and all the styles were written in Sass (SCSS). The structure was built with HTML.",
 		],
 		img: forkify,
