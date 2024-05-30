@@ -46,7 +46,7 @@
 		font-size: 16px;
 		line-height: 24px;
 		font-weight: 400;
-		text-transform: capitalize;
+		/* text-transform: capitalize; */
 		@apply text-black dark:text-white-100  md:text-[14px];
 	}
 

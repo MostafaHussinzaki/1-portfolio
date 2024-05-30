@@ -30,9 +30,8 @@ const DescriptionCard = ({ date, header, text, color }) => {
 
 // The main wrapper
 const ResumeInfo = ({ children }) => {
-	return <div className="grow font-medium">{children}</div>;
+	return <div className="grow font-medium basis-1/2">{children}</div>;
 };
-
 
 // our components
 export default ResumeInfo;

@@ -6,8 +6,7 @@ import {
 	DownloadSvg,
 } from "../assets/svg";
 
-// test image
-import personImg from "../assets/parson-img-1.webp";
+import myImage from "../assets/me.jpeg";
 
 import Button from "./ui/Button";
 import InfoDiv from "./ui/InfoDiv";
@@ -16,7 +15,7 @@ const PersonalInfo = () => {
 	return (
 		<div className="w-full md:w-[30%] bg-white-100 dark:bg-black py-10 px-7 md:py-6 md:px-4 rounded-xl text-center relative md:sticky lg:top-[200px] md:top-[30px] h-fit">
 			<img
-				src={personImg}
+				src={myImage}
 				alt="Personal Image"
 				className="rounded-lg mx-auto min-w-[130px] mb-4 lg:mt-[-180px]"
 			/>
@@ -27,27 +26,28 @@ const PersonalInfo = () => {
 				Front-end Developer
 			</span>
 			<div className="flex gap-2 flex-nowrap mx-auto justify-center mb-5">
-				<a
+				{/* <a
 					href="#"
 					className="icon group hover:bg-cyan transition-all duration-300"
 				>
 					<FacebookIcon classes="fill-[#4267b2] group-hover:fill-white-100 transition-all duration-300" />
-				</a>
+				</a> */}
 				<a
 					href="#"
 					className="icon group hover:bg-cyan transition-all duration-300"
 				>
 					<TwitterIcon classes="fill-[#1da1f2] group-hover:fill-white-100 transition-all duration-300" />
 				</a>
-				<a
+				{/* <a
 					href="#"
 					className="icon group hover:bg-cyan transition-all duration-300"
 				>
 					<InstagramIcon classes="fill-[#e4405f] group-hover:fill-white-100 transition-all duration-300" />
-				</a>
+				</a> */}
 				<a
-					href="#"
+					href="https://www.linkedin.com/in/mostafa-hussin-9b1444284/"
 					className="icon group hover:bg-cyan transition-all duration-300"
+					target="_blank"
 				>
 					<LinkedInIcon classes="fill-[#0077b5] group-hover:fill-white-100 transition-all duration-300" />
 				</a>
@@ -56,7 +56,7 @@ const PersonalInfo = () => {
 				<InfoDiv
 					type="email"
 					title="Email"
-					content="Example@Mail.Com"
+					content="mostafahussinzaki603@gmail.com"
 					classes="break-all"
 				/>
 				<InfoDiv
@@ -73,10 +73,10 @@ const PersonalInfo = () => {
 				/>
 			</div>
 			<div className="flex justify-center w-fit m-auto">
-				<Button>
+				{/* <Button>
 					<DownloadSvg />
 					Download Cv
-				</Button>
+				</Button> */}
 			</div>
 		</div>
 	);

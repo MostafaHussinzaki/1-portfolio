@@ -25,23 +25,23 @@ const HomePage = () => {
 				<div className="flex flex-wrap md:gap-5">
 					<WhatIDoCard
 						color="red"
-						title="Web Devlopment"
-						breif="Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam sed modi temporibus"
+						title="High performance  Website"
+						breif="I can create high-performance website which optimized for speed, efficiency, and user experience."
 					/>
 					<WhatIDoCard
 						color="blue"
-						title="Web Devlopment"
-						breif="Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam sed modi temporibus"
+						title="SEO friendly"
+						breif=" I can create a SEO-friendly website optimized for search engine visibility, ensuring your site attracts more visitors"
 					/>
 					<WhatIDoCard
 						color="blue"
-						title="Web Devlopment"
-						breif="Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam sed modi temporibus"
+						title="Responsive website"
+						breif="I can create a responsive website that adapts seamlessly to any device or screen size, providing an optimal viewing experience for all users"
 					/>
 					<WhatIDoCard
 						color="red"
-						title="Web Devlopment"
-						breif="Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam sed modi temporibus"
+						title="Clean Code"
+						breif=" I can deliver clean, well-documented code that is easy to maintain, scalable, and enhances overall website performance and reliability."
 					/>
 				</div>
 			</div>
