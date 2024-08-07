@@ -2,6 +2,7 @@ import movito from "./assets/projects/movito.png";
 import calculator from "./assets/projects/calculator.png";
 import ecommerce from "./assets/projects/ecommerce.png";
 import forkify from "./assets/projects/forkify.png";
+import patientrest from "./assets/projects/patientrest.png";
 
 export const PROJECTS = [
 	{
@@ -59,5 +60,19 @@ export const PROJECTS = [
 		],
 		img: forkify,
 		category: "JavaScript",
+	},
+	{
+		id: "4",
+		title: "Recipe",
+		type: "Full-Stack",
+		languages: "nextJs",
+		preview: "https://patientrest.vercel.app/",
+		repo: "https://github.com/MostafaHussinzaki/patientrest",
+		description: [
+			"This was one of my largest website that I have ever done, It is full-stack web app that used in setting appointments to the doctor, you must sign up and create account,Then set your appointment with specific doctor and date and then later the admin while schadule your appointment or cancel it, And you will know by sending you a message to your phone number.",
+			"I created this project with nextJs as full-stack library ( routing - api ),Used prisma orm to control the database, tailwind & shadcn for styling, react-hook-form & zod for handle and validate form, next-auth for authentication, react-query for handling api calls, And finally Twilio for sending messages.",
+		],
+		img: patientrest,
+		category: "nextJs",
 	},
 ];

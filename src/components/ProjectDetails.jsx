@@ -22,7 +22,7 @@ const ProjectDetails = ({ project }) => {
 							<a
 								href={project.repo}
 								target="_blank"
-								className="hover:text-[#fa5252] transition-all duration-200"
+								className="hover:text-[#fa5252] transition-all duration-200 break-words"
 							>
 								{project.repo}
 							</a>
@@ -40,11 +40,11 @@ const ProjectDetails = ({ project }) => {
 						<span className="text-sm sm:text-[16px] xd:text-lg text-black dark:text-white-100 font-medium">
 							Preview:
 						</span>
-						<span className="text-sm sm:text-[16px] xd:text-lg text-black dark:text-white-100 font-semibold ml-1 hover:text-[#fa5252] transition-all duration-200">
+						<span className="text-sm sm:text-[16px] xd:text-lg text-black dark:text-white-100 font-semibold ml-1 hover:text-[#fa5252] transition-all duration-200 text-wrap">
 							<a
 								href={project.preview}
 								target="_blank"
-								className="hover:text-[#fa5252] transition-all duration-200"
+								className="hover:text-[#fa5252] transition-all duration-200 text-wrap"
 							>
 								{project.preview}
 							</a>
