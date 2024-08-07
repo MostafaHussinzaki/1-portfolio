@@ -63,7 +63,7 @@ export const PROJECTS = [
 	},
 	{
 		id: "4",
-		title: "Recipe",
+		title: "Patientrest",
 		type: "Full-Stack",
 		languages: "nextJs",
 		preview: "https://patientrest.vercel.app/",
